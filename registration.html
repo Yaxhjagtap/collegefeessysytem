@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Student Registration</h1>
+        <form id="registrationForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="applicationNo">Application No:</label>
+            <input type="text" id="applicationNo" name="applicationNo" required>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="totalFees">Total Fees:</label>
+            <input type="number" id="totalFees" name="totalFees" required>
+
+            <label for="feesReceived">Fees Received:</label>
+            <input type="number" id="feesReceived" name="feesReceived" required>
+
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
+    <script src="registration.js"></script>
+</body>
+</html>
